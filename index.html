@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('menu')">Menu</a></li>
+            <li><a href="#" onclick="showSection('reservation')">Reservation</a></li>
+            <li><a href="#" onclick="showSection('about')">About Us</a></li>
+        </ul>
+    </nav>
+
+  
+
+<section id="home" class="section active">
+
+    <header>
+        <h1>Welcome to Taj</h1>
+    </header>
+    <img src="C:\Users\surya\Desktop\RSM\cartoon-chef-logo-design-featuring-white-hat-red-scarf-mustache-holding-spatula-brush-kitchen-321644438.webp" alt="Restaurant Logo" class="logo">
+    <p>Taj is a 5-star luxury hotel offering the best hospitality experience. Rated <strong>4.8/5</strong> by over 1000 customers.</p>
+    <h2>Special Offer of the Day</h2>
+    <p>Get 20% off on all desserts today!</p>
+
+<section>
+    <div>
+        <!-- Food Images Section -->
+        <div class="food-gallery">
+            <div class="food-box">
+                <img src="C:\Users\surya\Desktop\RSM\food1.jpg" alt="Delicious Pancakes">
+                <p><span class="fontcolorhome">Pancakes</span></p>
+            </div>
+            <div class="food-box">
+                <img src="C:\Users\surya\Desktop\RSM\food2.jpg" alt="Grilled Chicken Salad">
+                <p><span class="fontcolorhome">Grilled Chicken Salad</span></p>
+            </div>
+            <div class="food-box">
+                <img src="C:\Users\surya\Desktop\RSM\food3.jpg" alt="Steak and Potatoes">
+                <p><span class="fontcolorhome">Steak and Potatoes</span>Steak and Potatoes</p>
+            </div>
+            <div class="food-box">
+                <img src="C:\Users\surya\Desktop\RSM\food4.jpg" alt="Fruit Smoothie">
+                <p><span class="fontcolorhome">Fruit Smoothie</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+<section id="menu" class="section">
+    <header>
+        <h1>Today's Menu</h1>
+    </header>
+    <h2>Breakfast</h2>
+    <ul>
+        <li>Pancakes</li>
+        <li>Scrambled Eggs</li>
+        <li>Fresh Fruit Juice</li>
+    </ul>
+    <h2>Lunch</h2>
+    <ul>
+        <li>Grilled Chicken Salad</li>
+        <li>Vegetable Stir Fry</li>
+        <li>Soup of the Day</li>
+    </ul>
+    <h2>Evening Snacks</h2>
+    <ul>
+        <li>Tea and Scones</li>
+        <li>Sandwiches</li>
+        <li>Fruit Smoothies</li>
+    </ul>
+    <h2>Dinner</h2>
+    <ul>
+        <li>Steak and Potatoes</li>
+        <li>Grilled Salmon</li>
+        <li>Seasonal Veggies</li>
+    </ul>
+    <div style="isolation: isolate;     ;">
+        <div class="container">
+            <div class="plate"></div>
+            <div class ="cup">
+            <div class="top">
+            <div class="vapour">
+                <span style ="--i:1;"></span>
+                <span style ="--i:3;"></span>
+                <span style ="--i:16;"></span>
+                <span style ="--i:5;"></span>
+                <span style ="--i:13;"></span>
+                <span style ="--i:20;"></span>
+                <span style ="--i:6;"></span>
+                <span style ="--i:7;"></span>
+                <span style ="--i:10;"></span>
+                <span style ="--i:8;"></span>
+                <span style ="--i:17;"></span>
+                <span style ="--i:11;"></span>
+                <span style ="--i:12;"></span>
+                <span style ="--i:14;"></span>
+                <span style ="--i:2;"></span>
+                <span style ="--i:9;"></span>
+                <span style ="--i:15;"></span>
+                <span style ="--i:4;"></span>
+                <span style ="--i:19;"></span>
+            </div>
+            <div class="circle">
+            <div class="tea"></div>
+            </div>
+            </div>
+            <div class="handle"></div>
+            </div>
+            </div>
+    </div>
+</section>
+
+<section id="reservation" class="section">
+    <header>
+        <h1><span class="heading">Reserve a Table</span></h1>
+    </header>
+    <form id="reservationForm">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        
+       
+        <label for="reservation-date">Date for Reservation:</label>
+        <input type="date" id="reservation-date" name="reservation-date" required>
+        
+        
+        <label for="phone-number">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number" placeholder="Your Phone Number" required pattern="[0-9]{10}">
+        
+        
+        <label for="time-slot">Time Slot (10 AM - 10 PM):</label>
+        <select id="time-slot" name="time-slot" required>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="11:00 AM">11:00 AM</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="1:00 PM">1:00 PM</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="3:00 PM">3:00 PM</option>
+            <option value="4:00 PM">4:00 PM</option>
+            <option value="5:00 PM">5:00 PM</option>
+            <option value="6:00 PM">6:00 PM</option>
+            <option value="7:00 PM">7:00 PM</option>
+            <option value="8:00 PM">8:00 PM</option>
+            <option value="9:00 PM">9:00 PM</option>
+        </select>
+        
+  
+        <label for="hours-stay">Hours to Stay:</label>
+        <input type="number" id="hours-stay" name="hours-stay" min="1" max="5" placeholder="Number of Hours (Max 5)" required>
+        
+      
+        <button type="submit">Reserve Now</button>
+    </form>
+</section>
+
+    
+    <section id="about" class="section">
+        <header>
+            <h1>About Taj</h1>
+        </header>
+        <h2>Awards</h2>
+        <ul>
+            <li>Best Luxury Hotel - 2023</li>
+            <li>Innovation in Culinary Arts - 2022</li>
+            <li>Customer Excellence Award - 2021</li>
+        </ul>
+        <h2>Innovations in Food Industry</h2>
+        <p>At Taj, we take pride in leading culinary innovations. From introducing molecular gastronomy to creating sustainable farm-to-table experiences, our chefs constantly push the boundaries of culinary arts.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Taj</p>
+    </footer>
+
+ 
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        function reserveSeat() {
+            const timeSlot = document.getElementById('time-slots').value;
+            const numPeople = document.getElementById('num-people').value;
+            alert('Reservation confirmed for ' + numPeople + ' people at ' + timeSlot);
+        }
+    </script>
+</body>
+</html>
